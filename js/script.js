@@ -88,7 +88,7 @@ getRedirectResult(auth)
 
     // The signed-in user info.
     const user = result.user;
-    console.log("getRedirectResult :>> ", getRedirectResult);
+    console.log("getRedirectResult :>> ", user);
   })
   .catch((error) => {
     // Handle Errors here.
@@ -100,3 +100,4 @@ getRedirectResult(auth)
     const credential = GoogleAuthProvider.credentialFromError(error);
     // ...
   });
+getRedirectResult(auth);
